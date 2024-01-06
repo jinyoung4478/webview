@@ -1,4 +1,5 @@
 import { stackflow } from '@stackflow/react';
+import { historySyncPlugin } from '@stackflow/plugin-history-sync';
 import { basicRendererPlugin } from '@stackflow/plugin-renderer-basic';
 import { basicUIPlugin } from '@stackflow/plugin-basic-ui';
 
@@ -13,6 +14,22 @@ export const { Stack, useFlow, useStepFlow } = stackflow({
     basicUIPlugin({
       theme: 'cupertino',
     }),
+    // historySyncPlugin({
+    //   routes: {
+    //     Home: '/',
+    //     Article: '/articles/:articleId',
+    //     Signup: '/signup',
+    //   },
+    //   fallbackActivity: () => 'Home', // For 404 page
+    // }),
+    () => {
+      return {
+        key: 'my-plugin',
+        onInit() {
+          console.log('Initialized!');
+        },
+      };
+    },
   ],
   activities: {
     Home,

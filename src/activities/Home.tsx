@@ -19,6 +19,7 @@ const Home: ActivityComponentType = () => {
       title: 'name',
     });
   };
+
   return (
     <AppScreen appBar={{ title: 'My Activity' }}>
       <div>
