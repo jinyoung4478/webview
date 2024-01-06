@@ -8,17 +8,23 @@ import { useFlow } from '../stackflow';
 const Home: ActivityComponentType = () => {
   const { push } = useFlow();
 
-  const onClick = () => {
+  const navigateToArticle = () => {
     push('Article', {
       title: 'Article Page',
     });
   };
 
+  const navigateToSignup = () => {
+    push('Signup', {
+      title: 'name',
+    });
+  };
   return (
     <AppScreen appBar={{ title: 'My Activity' }}>
       <div>
         My Home
-        <button onClick={onClick}>Go to article page</button>
+        <button onClick={navigateToArticle}>Go to article page</button>
+        <button onClick={navigateToSignup}>Go to signup page</button>
       </div>
     </AppScreen>
   );
