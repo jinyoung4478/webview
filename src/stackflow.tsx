@@ -10,7 +10,7 @@ import { decompressFromEncodedURIComponent } from 'lz-string';
 import Main from './activities/Main';
 import Article from './activities/Article';
 
-export const { Stack, activities, useFlow, useStepFlow } = stackflow({
+export const { Stack, activities } = stackflow({
   transitionDuration: 350,
   activities: {
     Main,
@@ -35,7 +35,7 @@ export const { Stack, activities, useFlow, useStepFlow } = stackflow({
     basicRendererPlugin(),
     basicUIPlugin({
       theme: 'cupertino',
-      backgroundColor: vars.$semantic.color.paperDefault,
+      backgroundColor: 'white',
       appBar: {
         textColor: vars.$scale.color.gray900,
         iconColor: vars.$scale.color.gray900,

@@ -5,6 +5,7 @@ import { ActivityComponentType } from '@stackflow/react';
 import { AppScreen } from '@stackflow/plugin-basic-ui';
 
 type ArticleParams = {
+  articleId: string;
   title: string;
 };
 const Article: ActivityComponentType<ArticleParams> = ({ params }) => {

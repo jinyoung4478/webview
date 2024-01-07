@@ -1,4 +1,4 @@
-import { f } from "../styles";
+import { f } from '@/styles';
 
 const SVG = `
 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -6,8 +6,6 @@ const SVG = `
 </svg>
 `;
 
-const IconExpandMore: React.FC = () => (
-  <div className={f.flex} dangerouslySetInnerHTML={{ __html: SVG }} />
-);
+const IconExpandMore: React.FC = () => <div className={f.flex} dangerouslySetInnerHTML={{ __html: SVG }} />;
 
 export default IconExpandMore;

@@ -1,4 +1,4 @@
-import { f } from "../styles";
+import { f } from '@/styles';
 
 const SVG = `
 <svg width="82" height="30" viewBox="0 0 82 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,8 +42,6 @@ const SVG = `
 </svg>
 `;
 
-const ImageProfileRating: React.FC = () => (
-  <div className={f.flex} dangerouslySetInnerHTML={{ __html: SVG }} />
-);
+const ImageProfileRating: React.FC = () => <div className={f.flex} dangerouslySetInnerHTML={{ __html: SVG }} />;
 
 export default ImageProfileRating;
