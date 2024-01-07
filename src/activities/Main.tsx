@@ -1,11 +1,11 @@
 /**
- * Home.tsx
+ * Main.tsx
  */
 import { ActivityComponentType } from '@stackflow/react';
 import { AppScreen } from '@stackflow/plugin-basic-ui';
 import { useFlow } from '../stackflow';
 
-const Home: ActivityComponentType = () => {
+const Main: ActivityComponentType = () => {
   const { push } = useFlow();
 
   const navigateToArticle = () => {
@@ -21,9 +21,9 @@ const Home: ActivityComponentType = () => {
   };
 
   return (
-    <AppScreen appBar={{ title: 'My Activity' }}>
+    <AppScreen appBar={{ title: 'My Main' }}>
       <div>
-        My Home
+        My Main
         <button onClick={navigateToArticle}>Go to article page</button>
         <button onClick={navigateToSignup}>Go to signup page</button>
       </div>
@@ -31,4 +31,4 @@ const Home: ActivityComponentType = () => {
   );
 };
 
-export default Home;
+export default Main;
