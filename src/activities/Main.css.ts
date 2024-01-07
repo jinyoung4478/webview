@@ -1,7 +1,7 @@
 import { cssVars } from '@stackflow/plugin-basic-ui';
 import { style } from '@vanilla-extract/css';
 
-import { f } from '../styles';
+import { f } from '@/styles';
 
 export const wrapper = style([f.posAbsFull, f.flexColumn, f.rootLineHeight]);
 
